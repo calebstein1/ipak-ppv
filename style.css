@@ -84,6 +84,14 @@ ul {
     width: 240px;
     height: auto;
 }
+.video-container {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    justify-content: center;
+    display: flex;
+}
 
 @media only screen and (max-width: 540px), only screen and (max-device-width: 540) {
     .sidebar {
