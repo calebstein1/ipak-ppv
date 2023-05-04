@@ -7,28 +7,51 @@
     <title>IPAK-EDU PPV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
+    <script src="search.js"></script>
 </head>
 <body>
     <div class="header">
-        <h1 class="header-logo">IPAK-EDU On-Demand Courses</h1>
-        <input placeholder="Search courses..." class="search-box">
+        <h1 id="newest-recipes" class="header-logo">IPAK-EDU On-Demand Courses</h1>
+        <input placeholder="Search courses..." id="search" class="search-box">
     </div>
     <div class="content-area">
         <div class="sidebar">
             <ul>
                 <li><a href="/">Courses</a></li>
-                <li><a href="https://ipak-edu.org/">ipak-edu.org</a></li>
             </ul>
+            <a class="ipak-link" target="_blank" href="https://ipak-edu.org/">ipak-edu.org</a>
         </div>
-        <div class="course-cards">
-            <ul>
-                <li id="environmental=toxicology">
-                    <a href="/courses/environmental-toxicology.html">
-                        <img src="images/placeholder.png" alt="course image">
-                        <p>Environmental Toxicology</p>
-                    </a>
-                </li>
-            </ul>
+        <div class="course-cards" id="artlist">
+            <div id="environmental=toxicology">
+                <a href="/courses/environmental-toxicology.html">
+                    <img class="course-image" src="images/envtox.jpg" alt="course image">
+                    <p>Environmental Toxicology</p>
+                </a>
+            </div>
+            <div id="1environmental=toxicology">
+                <a href="/courses/environmental-toxicology.html">
+                    <img class="course-image" src="images/envtox.jpg" alt="course image">
+                    <p>test</p>
+                </a>
+            </div>
+            <div id="2environmental=toxicology">
+                <a href="/courses/environmental-toxicology.html">
+                    <img class="course-image" src="images/envtox.jpg" alt="course image">
+                    <p>hello there</p>
+                </a>
+            </div>
+            <div id="3environmental=toxicology">
+                <a href="/courses/environmental-toxicology.html">
+                    <img class="course-image" src="images/envtox.jpg" alt="course image">
+                    <p>hi it's me</p>
+                </a>
+            </div>
+            <div id="4environmental=toxicology">
+                <a href="/courses/environmental-toxicology.html">
+                    <img class="course-image" src="images/envtox.jpg" alt="course image">
+                    <p>sup i'm a test</p>
+                </a>
+            </div>
         </div>
     </div>
 </body>
