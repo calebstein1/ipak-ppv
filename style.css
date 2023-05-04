@@ -52,6 +52,7 @@ ul {
 .sidebar ul {
     margin-top: 32px;
     flex-direction: column;
+    gap: 16px;
     display: flex;
 }
 .ipak-link {
