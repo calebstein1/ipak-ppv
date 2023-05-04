@@ -29,3 +29,43 @@ ul {
     margin-right: 16px;
     border-radius: 8px;
 }
+.content-area {
+    height: 100%;
+    display: flex;
+}
+.sidebar {
+    background-color: lightgrey;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: none;
+    display: flex;
+}
+.sidebar ul {
+    margin-top: 32px;
+    flex-direction: column;
+    display: flex;
+}
+.ipak-link {
+    margin-bottom: 32px;
+}
+.course-cards {
+    padding: 64px;
+    flex-flow: row wrap;
+    gap: 32px;
+    display: flex;
+}
+.course-cards a {
+    background-color:lightblue;
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.course-image {
+    border-radius: 8px;
+    width: 240px;
+    height: auto;
+}
