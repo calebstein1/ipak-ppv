@@ -1,10 +1,14 @@
+@import "nord.css";
+
 body {
+    overflow: hidden;
     height: 100vh;
     margin: 0;
     flex-direction: column;
     display: flex;
 }
 a {
+    color: var(--nord4);
     text-decoration: none;
 }
 ul {
@@ -13,12 +17,13 @@ ul {
     list-style: none;
 }
 .header {
-    background-color: grey;
+    background-color: var(--nord0);
     height: 72px;
     display: flex;
     align-items: center;
 }
 .header-logo {
+    color: var(--nord4);
     padding-left: 16px;
     font-size: 24px;
     font-weight: bold;
@@ -34,7 +39,7 @@ ul {
     display: flex;
 }
 .sidebar {
-    background-color: lightgrey;
+    background-color: var(--nord2);
     width: 180px;
     align-items: center;
     justify-content: space-between;
@@ -48,24 +53,41 @@ ul {
     display: flex;
 }
 .ipak-link {
-    margin-bottom: 32px;
+    position: absolute;
+    bottom: 32px;
 }
 .course-cards {
+    background-color: var(--nord6);
+    width: 100%;
     padding: 64px;
+    overflow-y: auto;
     flex-flow: row wrap;
     gap: 32px;
     display: flex;
 }
 .course-cards a {
-    background-color:lightblue;
+    background-color: var(--nord10);
     padding: 8px;
     border-radius: 8px;
+    transition: padding 0.2s ease-in;
     align-items: center;
     flex-direction: column;
     display: flex;
+}
+.course-cards a:hover {
+    padding: 16px;
 }
 .course-image {
     border-radius: 8px;
     width: 240px;
     height: auto;
+}
+
+@media only screen and (max-width: 540px), only screen and (max-device-width: 540) {
+    .sidebar {
+        display: none;
+    }
+    .header-logo {
+        font-size: 16px;
+    }
 }
