@@ -111,6 +111,13 @@ ul {
     font-size: 18px;
     font-weight: 600;
 }
+.text-container a {
+    color: var(--nord9);
+    transition: color 0.2s ease-in;
+}
+.text-container a:hover {
+    color: var(--nord10);
+}
 
 @media only screen and (max-width: 540px), only screen and (max-device-width: 540) {
     .sidebar {
