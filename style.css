@@ -1,5 +1,9 @@
 @import "nord.css";
 
+::selection {
+    color: var(--nord6);
+    background-color: var(--nord10);
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     overflow: hidden;
