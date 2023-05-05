@@ -118,6 +118,10 @@ ul {
 .text-container a:hover {
     color: var(--nord10);
 }
+.text-container img {
+    width: 256px;
+    height: auto;
+}
 
 @media only screen and (max-width: 540px), only screen and (max-device-width: 540) {
     .sidebar {
