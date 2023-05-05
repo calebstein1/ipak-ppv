@@ -96,6 +96,7 @@ ul {
     height: auto;
 }
 .video-container, .text-container {
+    background-color: var(--nord6);
     overflow-y: auto;
     width: 100%;
     padding: 16px;
