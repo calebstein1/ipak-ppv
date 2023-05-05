@@ -82,9 +82,19 @@ ul {
 .sidebar-link:hover {
     font-size: 18px;
 }
-.ipak-link {
+.sidebar-btm {
     position: absolute;
     bottom: 32px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.sidebar-btm p {
+    color: var(--nord4);
+    font-size: 10px;
+}
+.personal-link {
+    text-decoration: underline;
 }
 .course-cards {
     background-color: var(--nord6);
