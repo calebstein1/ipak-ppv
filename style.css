@@ -41,9 +41,6 @@ ul {
 .home-nav:hover {
     width: 36px;
 }
-#menu-toggle {
-    display: none;
-}
 .header-logo {
     color: var(--nord4);
     padding-left: 16px;
@@ -60,6 +57,9 @@ ul {
 .content-area {
     height: 100%;
     display: flex;
+}
+#menu-toggle {
+    display: none;
 }
 .sidebar {
     background-color: var(--nord2);
