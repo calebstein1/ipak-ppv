@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="search.js"></script>
+</head>
+<body>
+    <div class="header">
+        <label for="menu-toggle">
+            <img class="mobile-nav" src="/burger.png" alt="hamburger menu"></img>
+        </label>
+        <a href="/"><img class="home-nav" src="/home.png" alt="home button"></a>
+        <h1 id="newest-recipes" class="header-logo"><a href="/">Courses</a></h1>
+        <input placeholder="Search courses..." id="search" class="search-box">
+    </div>
+    <div class="content-area">
+        <input type="checkbox" id="menu-toggle">
+        <div class="sidebar">
+            <ul id="sidebar-links">
+                <script src="sidebar.js"></script>
+            </ul>
+            <a class="sidebar-link ipak-link" target="_blank" href="https://ipak-edu.org/">ipak-edu.org</a>
+        </div>
+        <div class="course-cards" id="artlist">
+            <script src="/create-cards.js"></script>
+        </div>
+    </div>
+</body>
+</html>

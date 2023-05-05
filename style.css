@@ -27,11 +27,19 @@ ul {
     display: flex;
     align-items: center;
 }
-.mobile-nav {
+.mobile-nav, .home-nav {
     width: 32px;
     height: auto;
     margin-left: 16px;
+}
+.mobile-nav {
     display: none;
+}
+.home-nav {
+    transition: width 0.2s ease-in;
+}
+.home-nav:hover {
+    width: 36px;
 }
 #menu-toggle {
     display: none;
