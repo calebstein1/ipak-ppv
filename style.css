@@ -155,7 +155,7 @@ ul {
     height: auto;
 }
 
-@media only screen and (max-width: 540px), only screen and (max-device-width: 540) {
+@media only screen and (max-width: 840px), only screen and (max-device-width: 840) {
     .sidebar {
         display: none;
     }
