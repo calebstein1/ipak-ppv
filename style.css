@@ -168,4 +168,7 @@ ul {
     #menu-toggle:checked + .sidebar {
         display: flex;
     }
+    .course-cards {
+        justify-content: center;
+    }
 }
