@@ -94,7 +94,7 @@ ul {
     font-size: 10px;
 }
 .personal-link {
-    text-decoration: underline;
+    font-style: italic;
 }
 .course-cards {
     background-color: var(--nord6);
@@ -155,7 +155,7 @@ ul {
     height: auto;
 }
 
-@media only screen and (max-width: 840px), only screen and (max-device-width: 840) {
+@media only screen and (max-width: 840px), only screen and (max-device-width: 840px) {
     .sidebar {
         display: none;
     }
@@ -170,5 +170,10 @@ ul {
     }
     .course-cards {
         justify-content: center;
+    }
+}
+@media only screen and (max-height: 420px), only screen and (max-device-height: 420px) {
+    .sidebar-btm {
+        display: none;
     }
 }
