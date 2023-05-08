@@ -89,7 +89,7 @@ ul {
     flex-direction: column;
     display: flex;
 }
-.sidebar-btm p {
+.sidebar-btm p, .sidebar-btm p + a {
     color: var(--nord4);
     font-size: 10px;
 }
