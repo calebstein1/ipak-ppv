@@ -166,6 +166,19 @@ ul {
     width: 256px;
     height: auto;
 }
+.contact-form {
+    max-width: 320px;
+    flex-flow: row wrap;
+    display: flex;
+}
+.contact-form input {
+    flex: 1 1 320px;
+}
+.contact-form textarea {
+    flex: 1 1 320px;
+    height: 120px;
+    margin-bottom: 8px;
+}
 
 @media only screen and (max-width: 840px), only screen and (max-device-width: 840px) {
     .sidebar {

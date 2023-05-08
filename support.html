@@ -7,6 +7,31 @@
     <title>Support</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('V4JqfTzqfz6-Dlc_U');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_fdws8as', 'template_3utipak_support', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        alert("Message sent successfully, you should hear back soon!");
+                        document.getElementById("contact-form").reset();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert("Sending failed for some reason, please send your request directly to helpdesk@ipak-edu.org");
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -29,7 +54,17 @@
             </div>
         </div>
         <div class="text-container">
-            <p>If you need assistance with any part of this site or the On-Demand service, please write to <a href="mailto:helpdesk@ipak-edu.org">helpdesk@ipak-edu.org</a> and we'll get back to you as soon as possible.</p>
+            <p>If you need assistance with any part of this site or the On-Demand service, please use the form below and we'll get back to you as soon as possible.</p>
+            <form id="contact-form" class="contact-form">
+                <input type="hidden" name="contact_number">
+                <label for="user_name">Name:</label>
+                <input type="text" name="user_name" required>
+                <label for="user_email">Email:</label>
+                <input type="email" name="user_email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
             <p>The source code for this site is hosted <a target="_blank" href="https://github.com/calebstein1/ipak-ppv">on GitHub</a>, and you're more than welcome to open an issue or feature request there as well.</p>
         </div>
     </div>
