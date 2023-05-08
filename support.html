@@ -17,7 +17,7 @@
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                document.getElementById("sending-text").innerText = "\nsending...";
+                document.getElementById("sending-text").innerHTML = '<div class="loader"></div>Sending...';
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
@@ -26,15 +26,35 @@
                         console.log('SUCCESS!');
                         alert("Message sent successfully, you should hear back soon!");
                         document.getElementById("contact-form").reset();
-                        document.getElementById("sending-text").innerText = "";
+                        document.getElementById("sending-text").innerHTML = "";
                     }, function(error) {
                         console.log('FAILED...', error);
                         alert("Sending failed for some reason, please send your request directly to helpdesk@ipak-edu.org");
-                        document.getElementById("sending-text").innerText = "";
+                        document.getElementById("sending-text").innerHTML = "";
                     });
             });
         }
     </script>
+    <style>
+        #sending-text {
+            margin-top: 8px;
+            gap: 8px;
+            align-items: center;
+            display: flex;
+        }
+        .loader {
+            border: 4px solid var(--nord4);
+            border-top: 4px solid var(--nord1);
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -69,7 +89,7 @@
                 <textarea name="message" required></textarea>
                 <input type="submit" value="Send">
             </form>
-            <span id="sending-text"></span>
+            <div id="sending-text"></div>
             <p>The source code for this site is hosted <a target="_blank" href="https://github.com/calebstein1/ipak-ppv">on GitHub</a>, and you're more than welcome to open an issue or feature request there as well.</p>
         </div>
     </div>
