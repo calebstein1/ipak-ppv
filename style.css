@@ -122,6 +122,18 @@ ul {
     width: 240px;
     height: auto;
 }
+.course-desc {
+    font-size: 12px;
+    width: 240px;
+    height: 135px;
+    display: none;
+}
+.course-cards a:hover > img {
+    display: none;
+}
+.course-cards a:hover > .course-desc {
+    display: block;
+}
 .video-container, .text-container {
     background-color: var(--nord6);
     overflow-y: auto;
