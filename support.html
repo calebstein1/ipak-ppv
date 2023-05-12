@@ -24,13 +24,11 @@
                 emailjs.sendForm('service_fdws8as', 'template_3utipak_support', this)
                     .then(function() {
                         console.log('SUCCESS!');
-                        alert("Message sent successfully, you should hear back soon!");
+                        document.getElementById("sending-text").textContent = "Message sent successfully, you should hear back soon!";
                         document.getElementById("contact-form").reset();
-                        document.getElementById("sending-text").innerHTML = "";
                     }, function(error) {
                         console.log('FAILED...', error);
-                        alert("Sending failed for some reason, please send your request directly to helpdesk@ipak-edu.org");
-                        document.getElementById("sending-text").innerHTML = "";
+                        document.getElementById("sending-text").textContent = "Sending failed for some reason, please send your request directly to helpdesk@ipak-edu.org";
                     });
             });
         }
