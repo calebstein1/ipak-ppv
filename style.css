@@ -102,6 +102,7 @@ ul {
     padding: 64px;
     overflow-y: auto;
     flex-flow: row wrap;
+    align-items: flex-start;
     gap: 32px;
     display: flex;
 }
