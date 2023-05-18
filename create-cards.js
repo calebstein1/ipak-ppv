@@ -1,19 +1,9 @@
+const cardArea = document.getElementById("artlist");
 function Card(id, img, desc, title) {
     this.id = id;
     this.img = img;
     this.desc = desc;
     this.title = title;
-}
-function createCard(id, img, desc, title) {
-    document.getElementById("artlist").innerHTML += `
-        <div id="${id}">
-            <a href="courses/${id}.html">
-                <img class="course-image" src="images/${img}" alt="course image">
-                <span class="course-desc">${desc}</span>
-                <p>${title}</p>
-            </a>
-        </div>
-    `
 }
 
 const courses = [
@@ -23,4 +13,14 @@ const courses = [
         "Environmental Toxicology"),
 ]
 
-courses.forEach(course => createCard(course.id, course.img, course.desc, course.title));
+courses.forEach(course => {
+    cardArea.innerHTML += `
+        <div id="${course.id}">
+            <a href="courses/${course.id}.html">
+                <img class="course-image" src="images/${course.img}" alt="course image">
+                <span class="course-desc">${course.desc}</span>
+                <p>${course.title}</p>
+            </a>
+        </div>
+    `
+});
