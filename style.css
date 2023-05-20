@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     display: flex;
 }
-a {
+a, button {
     color: var(--nord4);
     text-decoration: none;
 }
@@ -106,7 +106,7 @@ ul {
     gap: 32px;
     display: flex;
 }
-.course-cards a {
+.course-cards button {
     background-color: var(--nord10);
     padding: 8px;
     border-radius: 8px;
@@ -115,7 +115,7 @@ ul {
     flex-direction: column;
     display: flex;
 }
-.course-cards a:hover {
+.course-cards button:hover {
     padding: 16px;
 }
 .course-image {
@@ -129,10 +129,10 @@ ul {
     height: 135px;
     display: none;
 }
-.course-cards a:hover > img {
+.course-cards button:hover > img {
     display: none;
 }
-.course-cards a:hover > .course-desc {
+.course-cards button:hover > .course-desc {
     display: block;
 }
 .video-container, .text-container {
