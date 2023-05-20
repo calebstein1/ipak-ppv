@@ -33,7 +33,7 @@ courses.reverse().forEach(course => {
     const title = document.createElement("p");
 
     cont.setAttribute("id", `${course.id}`);
-    setAttributes(link, {"href": `courses/${course.id}.html`, "data-embed": `${course.embed}`});
+    link.setAttribute("data-embed", `${course.embed}`);
     setAttributes(img, {"class": "course-image", "src": `images/${course.img}`, "alt": "course image",});
     desc.setAttribute("class", "course-desc");
 
