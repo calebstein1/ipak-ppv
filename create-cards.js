@@ -48,7 +48,9 @@ courses.reverse().forEach(course => {
 });
 
 document.querySelectorAll("button").forEach(card => card.addEventListener("click", () => {
-    document.querySelector(".header-logo a").textContent = card.querySelector("p").textContent;
+    const courseTitle = card.querySelector("p").textContent;
+    document.title = courseTitle;
+    document.querySelector(".header-logo a").textContent = courseTitle;
     document.getElementById("search").remove();
     cardArea.remove();
     videoContainer.appendChild(svp);
