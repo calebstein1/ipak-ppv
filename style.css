@@ -118,6 +118,12 @@ ul {
 .course-cards button:hover {
     padding: 16px;
 }
+.image-container {
+    width: 240px;
+    height: 135px;
+    align-items: center;
+    display: flex;
+}
 .course-image {
     border-radius: 8px;
     width: 240px;
@@ -130,7 +136,7 @@ ul {
     text-align: justify;
     display: none;
 }
-.course-cards button:hover > img {
+.course-cards button:hover > .image-container {
     display: none;
 }
 .course-cards button:hover > .course-desc {

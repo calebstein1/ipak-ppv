@@ -12,19 +12,22 @@ function setAttributes(el, attr) {
 courses.reverse().forEach(course => {
     const cont = document.createElement("div");
     const link = document.createElement("button");
+    const imgContainer = document.createElement("div");
     const img = document.createElement("img");
     const desc = document.createElement("span");
     const title = document.createElement("p");
 
     cont.setAttribute("id", `${course.id}`);
     setAttributes(link, {"data-playlistId": `${course.playlistId}`, "data-selPlaylist": `${course.selPlaylist}`});
+    imgContainer.setAttribute("class", "image-container")
     setAttributes(img, {"class": "course-image", "src": `images/${course.img}`, "alt": "course image",});
     desc.setAttribute("class", "course-desc");
 
     desc.innerText = `${course.desc}`;
     title.innerText = `${course.title}`;
 
-    link.appendChild(img);
+    imgContainer.appendChild(img);
+    link.appendChild(imgContainer);
     link.appendChild(desc);
     link.appendChild(title);
     cont.appendChild(link);
