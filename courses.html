@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="search.js"></script>
+    <script src="sidebar.js" defer></script>
+    <script src="/cards.js" defer></script>
+    <script src="/on-demand.js" defer></script>
     <script src="https://play.webvideocore.net/js/vapp.js" ></script>
 </head>
 <body>
@@ -21,12 +24,8 @@
     </div>
     <div class="content-area">
         <input type="checkbox" id="menu-toggle">
-        <div class="sidebar">
-            <script src="sidebar.js"></script>
-        </div>
-        <div class="course-cards" id="artlist">
-            <script src="/create-cards.js"></script>
-        </div>
+        <div class="sidebar"></div>
+        <div class="course-cards" id="artlist"></div>
     </div>
 </body>
 </html>
