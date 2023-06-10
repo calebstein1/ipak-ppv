@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.classList.remove("js-only");
   }
 
-  const recipes = document.querySelectorAll("#artlist div");
+  const recipes = document.querySelectorAll("#artlist > div");
   const search = document.getElementById("search");
   const oldheading = document.getElementById("newest-recipes");
   const artlist = document.getElementById("artlist");
