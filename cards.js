@@ -12,6 +12,13 @@ const courses = [
         "Vaccine Course",
         "1495799",
         "6404faegiaj4888"),
+
+    new Card("bio-a",
+        "bioa.jpg",
+        "This course is the first of two courses designed to teach the public the fundamentals of biology.",
+        "Bio A",
+        "1512842",
+        "1f9hgj13de10e88"),
 ]
 
 function Card(id, img, desc, title, playlistId, selPlaylist) {
