@@ -128,6 +128,7 @@ ul {
     border-radius: 8px;
     width: 240px;
     height: auto;
+    max-height: 135px;
 }
 .course-desc {
     font-size: 12px;
